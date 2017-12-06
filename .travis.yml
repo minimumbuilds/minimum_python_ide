@@ -1,0 +1,7 @@
+services:
+- docker
+install:
+- docker build -t django_alpine .
+- docker run -d -p 127.0.0.1:8080:8080 --name django_alpine django_alpine
+script:
+- docker ps | grep -q django_alpine
