@@ -1,5 +1,7 @@
 # minimum_template
 
+Version: v0.0.0
+
 ## Docker Image
 
 [![](https://images.microbadger.com/badges/version/minimumbuilds/minimum_template:v0.0.0.svg)](https://microbadger.com/images/minimumbuilds/minimum_template:v0.0.0 "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/minimumbuilds/minimum_template:v0.0.0.svg)](https://microbadger.com/images/minimumbuilds/minimum_template:v0.0.0 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/commit/minimumbuilds/minimum_template:v0.0.0.svg)](https://microbadger.com/images/minimumbuilds/minimum_template:v0.0.0 "Get your own commit badge on microbadger.com") 
