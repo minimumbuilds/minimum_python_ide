@@ -9,15 +9,13 @@ export mkfile_dir
 init: 
 	# TODO add error handling
 	git remote remove origin
-	hub create && sleep 2 
+	hub create  
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
 	bumpversion --commit patch
-	git push --tags origin master
-	sleep 2
 	travis login --auto
 	travis enable --no-interactive
-	
+	git push --tags origin master
 
 build: $(mkfile_dir)/Dockerfile
 	docker build -t $(mkfile_dir_name) .
