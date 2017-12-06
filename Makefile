@@ -8,7 +8,7 @@ export mkfile_dir
 
 init: 
 	git remote remove origin
-	hub create && sleep 1 
+	hub create && sleep 2 
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
 	bumpversion --commit patch
