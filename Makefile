@@ -20,7 +20,9 @@ init:
 	# Could add a curl to the URL for the repo
 	# on GitHub and check that it returns correctly before proceeding.
 	# for now, using sleep.
-	travis login --auto && travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
+	travis login --auto 
+	sleep 5
+	travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
 	git push --tags origin master
 
 build: $(mkfile_dir)/Dockerfile
