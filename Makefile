@@ -15,6 +15,7 @@ init:
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
 	bumpversion --commit patch
+	sleep 3 # let GitHub catch up
 	travis login --auto && travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
 	git push --tags origin master
 
