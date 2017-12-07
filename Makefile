@@ -15,7 +15,11 @@ init:
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
 	bumpversion --commit patch
-	sleep 3 # let GitHub catch up
+	sleep 5 # let GitHub catch up, sleep until URL returns 
+	# Having some issues where GitHub is lagging behind and causing things to fail.
+	# Could add a curl to the URL for the repo
+	# on GitHub and check that it returns correctly before proceeding.
+	# for now, using sleep.
 	travis login --auto && travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
 	git push --tags origin master
 
