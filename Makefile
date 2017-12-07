@@ -17,7 +17,7 @@ init:
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
 	bumpversion --commit patch
-	travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir)'
+	travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
 	git push --tags origin master
 
 build: $(mkfile_dir)/Dockerfile
