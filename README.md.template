@@ -1,26 +1,6 @@
 # minimum_template
 
-This the self-contstructing base template for minimum_builds autobuilds.
-
-Clone this repository and ``make init`` to:
-
-Create:
-- Create cooresponding repository on GibHub
-- Create & trigger Travis.ci for build tests
-- Create & trigger autobuilds on Docker Hub.
-
-Build:
-- Update all file to reflect to CWD as the project name
-- Remove this README.md and replace with a versioned project specific README.md
-
-Requiremments:
-- ACCOUNTS: www.github.com, hub.docker.com, travis-ci.org
-- bumpversion https://github.com/peritus/bumpversion
-- hub https://hub.github.com/
-
-# minimum_template
-
-Version: v0.0.1
+Version: v0.0.0
 
 ## Docker Image
 

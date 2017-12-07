@@ -9,6 +9,8 @@ export mkfile_dir
 init: 
 	# TODO add error handling
 	git remote remove origin
+	rm README.md
+	mv README.md.template README.md
 	hub create  
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
