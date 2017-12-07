@@ -8,8 +8,8 @@ export mkfile_dir
 
 init: 
 	# TODO add error handling
-	hub create
 	git remote remove origin
+	hub create
 	rm README.md
 	mv README.md.template README.md
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
