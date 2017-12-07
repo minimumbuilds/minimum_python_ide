@@ -12,12 +12,10 @@ init:
 	git remote remove origin
 	rm README.md
 	mv README.md.template README.md
-	sleep 1
-	travis login --auto
 	sed -i -e 's/minimum_template/$(mkfile_dir_name)/g' Dockerfile README.md .bumpversion.cfg
 	git commit -a -m 'initial'
 	bumpversion --commit patch
-	travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
+	travis login --auto && travis enable --no-interactive -r 'minimumbuilds/$(mkfile_dir_name)'
 	git push --tags origin master
 
 build: $(mkfile_dir)/Dockerfile
