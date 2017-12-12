@@ -1,4 +1,4 @@
-FROM minimumbuilds/minimum_python3:latest
+FROM alpine:3.6	 
 
 MAINTAINER Minimum Builds <minumumbuilds@gmail.com>
 
@@ -11,12 +11,14 @@ LABEL Name=minimum_python_ide \
       org.label-schema.vcs-url="https://github.com/minimumbuilds/minimum_python_ide.git" \
       org.label-schema.vcs-ref=$VCS_REF
 
-COPY requirements.txt .
-
-RUN pip3 install -r requirements.txt \ 
-        && cd /usr/local/bin \
-	&& ln -s idle3 idle \
-	&& ln -s pydoc3 pydoc \
-	&& ln -s python3 python \
-	&& ln -s python3-config python-config 
+RUN apk update && apk add git gcc make ncurses-dev ncurses python-dev python3-dev python python3 ctags nodejs-npm musl-dev \
+  	&& cd /tmp && git clone https://github.com/vim/vim.git && cd vim \
+  	&& ./configure --enable-pythoninterp --prefix=/usr --with-python-config-dir=/usr/lib/python2.7/config --enable-python3interp \
+  	&& make && make install \
+  	&& npm install -g livedown \
+  	&& git clone https://github.com/shime/vim-livedown.git ~/.vim/bundle/vim-livedown \
+  	&& git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim \
+  	&& git clone https://github.com/jbarnes7952/dotfiles.git \
+  	&& cp dotfiles/.vimrc ~ \
+  	&& vim +PluginInstall +qall 
 
