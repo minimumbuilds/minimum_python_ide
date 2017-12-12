@@ -5,10 +5,10 @@ MAINTAINER Minimum Builds <minumumbuilds@gmail.com>
 ARG BUILD_DATE
 ARG VCS_REF
 
-LABEL Name=minimum_template \
+LABEL Name=minimum_python_ide \
       Version=0.0.0 \
       org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-url="https://github.com/minimumbuilds/minimum_template.git" \
+      org.label-schema.vcs-url="https://github.com/minimumbuilds/minimum_python_ide.git" \
       org.label-schema.vcs-ref=$VCS_REF
 
 COPY requirements.txt .
