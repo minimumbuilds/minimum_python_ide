@@ -4,7 +4,7 @@ Version: v0.0.8
 
 ![Vim Python IDE][logo]
 
-[logo]: /python_ide.png "Logo Title Text 2"
+[logo]: /python_ide_full.png "Logo Title Text 2"
 
 ## Docker Image
 
