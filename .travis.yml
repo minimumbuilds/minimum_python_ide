@@ -1,4 +1,0 @@
-services:
-- docker
-install:
-- docker build -t minimum_python_ide .
