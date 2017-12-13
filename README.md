@@ -1,6 +1,6 @@
 # minimum_python_ide
 
-Version: v0.0.8
+Version: v0.0.9
 
 ![Vim Python IDE][logo]
 
@@ -8,7 +8,7 @@ Version: v0.0.8
 
 ## Docker Image
 
-[![](https://images.microbadger.com/badges/version/minimumbuilds/minimum_python_ide:v0.0.8.svg)](https://microbadger.com/images/minimumbuilds/minimum_python_ide:v0.0.8 "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/minimumbuilds/minimum_python_ide:v0.0.8.svg)](https://microbadger.com/images/minimumbuilds/minimum_python_ide:v0.0.8 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/commit/minimumbuilds/minimum_python_ide:v0.0.8.svg)](https://microbadger.com/images/minimumbuilds/minimum_python_ide:v0.0.8 "Get your own commit badge on microbadger.com") 
+[![](https://images.microbadger.com/badges/version/minimumbuilds/minimum_python_ide:v0.0.9.svg)](https://microbadger.com/images/minimumbuilds/minimum_python_ide:v0.0.9 "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/minimumbuilds/minimum_python_ide:v0.0.9.svg)](https://microbadger.com/images/minimumbuilds/minimum_python_ide:v0.0.9 "Get your own image badge on microbadger.com")[![](https://images.microbadger.com/badges/commit/minimumbuilds/minimum_python_ide:v0.0.9.svg)](https://microbadger.com/images/minimumbuilds/minimum_python_ide:v0.0.9 "Get your own commit badge on microbadger.com") 
 
 ## Pull
 	docker pull minimumbuilds/minimum_python_ide
