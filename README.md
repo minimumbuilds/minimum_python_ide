@@ -6,18 +6,22 @@ Version: v0.1.1
 
 [logo]: /images/python_ide_full.png 
 
+## Requirements
+
+- Docker
+
 ## Clone the repo
 
-	``git clone https://github.com/minimumbuilds/minimum_python_ide.git``
+	git clone https://github.com/minimumbuilds/minimum_python_ide.git
 
 ## Personalize
 
-	``make personalize``
+	make personalize
 
 This will create a user (mbuilds) in the container with matching UID/GID of the current user.  
 
 ## Run
-	``docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos``
+	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos
 
 
 This will launch the IDE in the /repos dir in the current working directory. 
@@ -53,12 +57,12 @@ Additional Plugins:
 - Plugin 'jnurmine/Zenburn'
 - Plugin 'altercation/vim-colors-solarized'
 - Plugin 'jistr/vim-nerdtree-tabs'
-- Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+- Plugin 'Lokaltog/powerline'
 - Plugin 'tpope/vim-fugitive'
 - Plugin 'Shougo/deoplete.nvim'
 - Plugin 'roxma/nvim-yarp'
 - Plugin 'roxma/vim-hug-neovim-rpc'
-- Plugin 'kien/ctrlp.vim'
+- Plugin 'ctrlpvim/ctrlp.vim'
 - Plugin 'bling/vim-airline'
 - Plugin 'vim-airline/vim-airline-themes'
 - Plugin 'majutsushi/tagbar'
