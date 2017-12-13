@@ -4,7 +4,7 @@ Version: v0.1.1
 
 ![Vim Python IDE][logo]
 
-[logo]: /python_ide_full.png 
+[logo]: /images/python_ide_full.png 
 
 ## Personalize
 
@@ -13,7 +13,7 @@ Version: v0.1.1
 This will create a user in the container with matching UID/GID of the current user.  
 
 ## Run
-	docker run -it --rm -p 1337:1337 --user -v $PWD:/repos minimumbuilds/vim_ide vim /repos
+	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos
 
 
 This will launch the IDE in the /repos dir in the container (your local directory)
