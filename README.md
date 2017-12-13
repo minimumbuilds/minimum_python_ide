@@ -20,6 +20,18 @@ Version: v0.1.1
 
 This will create a user (mbuilds) in the container with matching UID/GID of the current user.  
 
+## Install nerd-fonts on the HOST
+
+If you want the fancy icons to work properly, you'll need to install them.
+
+For full instructions go to https://github.com/ryanoasis/nerd-fonts
+
+On Ubuntu, you can also:
+
+	git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+
+Then simply click on the fonts you'd like to install in the ``patched-fonts`` directory.
+
 ## Run
 	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos
 
