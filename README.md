@@ -14,9 +14,9 @@ Version: v0.1.2
 
 	git clone https://github.com/minimumbuilds/minimum_python_ide.git
 
-## Personalize
+## Make it Personal 
 
-	make personalize
+	make personal
 
 This will create a user (mbuilds) in the container with matching UID/GID of the current user.  
 

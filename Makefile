@@ -18,7 +18,7 @@ pmajor:
 	bumpversion  --commit major 
 	git push --tags origin master
 
-personalize:
+personal:
 	cp Dockerfile.save Dockerfile
 	./personalize.sh
 	docker build -t vim_ide .
