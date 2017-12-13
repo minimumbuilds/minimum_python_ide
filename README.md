@@ -1,6 +1,6 @@
 # minimum_python_ide
 
-Version: v0.0.11
+Version: v0.1.0
 
 ![Vim Python IDE][logo]
 
