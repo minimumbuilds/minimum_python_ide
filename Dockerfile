@@ -20,5 +20,5 @@ RUN npm install -g livedown \
   	&& git clone https://github.com/shime/vim-livedown.git ~/.vim/bundle/vim-livedown \
   	&& git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim \
   	&& git clone https://github.com/minimumbuilds/minimum_dotfiles.git \
-  	&& cp dotfiles/.vimrc ~ \
+  	&& cp minimum_dotfiles/.vimrc ~ \
   	&& vim +PluginInstall +qall 
