@@ -18,7 +18,6 @@ RUN apk update && apk add git gcc make ncurses-dev ncurses python-dev python3-de
   	&& npm install -g livedown \
   	&& git clone https://github.com/shime/vim-livedown.git ~/.vim/bundle/vim-livedown \
   	&& git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim \
-  	&& git clone https://github.com/jbarnes7952/dotfiles.git \
+  	&& git clone https://github.com/minimumbuilds/dotfiles.git \
   	&& cp dotfiles/.vimrc ~ \
   	&& vim +PluginInstall +qall 
-

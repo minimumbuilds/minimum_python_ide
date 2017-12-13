@@ -21,13 +21,18 @@ Substitute the host machine directory you'd like to edit for <repos_dir>
 This will launch the IDE in the /repos dir in the container (your local directory)
 
 ## Usage
-
-- ``<F7>`` toggles Livedown preview.   Open a markdown file, hit F7 and you'll get a Livei preview of your Markown file. You will need to open a browser to ``localhost:1337``
+- ``<F2>`` Buffer prev 
+- ``<F3>`` Buffer next 
+- ``<F6>`` toggles Livedown preview.   Open a markdown file, hit F7 and you'll get a Live preview of your Markown file. You will need to open a browser to ``localhost:1337``.  The preview will update immediately on write.
+- ``<F7>`` (with a python file open) lint the current file & display output in a new window.  Saving a file will have the same effect.
 - ``<F8>`` toggles the righthand tag bar.  This will display a structured view of a program.  It does this by creating a sidebar that displays the ctags-generated tags of the current file, ordered by their scope. This means that for example methods in C++ are displayed under the class they are defined in.
+- ``<ctrl-p>`` Fuzzy file search finder: https://github.com/ctrlpvim/ctrlp.vim
+ 
+
 
 ## Contents
 
-### Base:
+### Base:Base
 - Official 3.6 alpine linux docker
 
 ### Adds:
