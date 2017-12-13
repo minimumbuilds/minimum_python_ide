@@ -10,7 +10,7 @@ Version: v0.1.1
 
 	make personalize
 
-This will create a user in the container with matching UID/GID of the current user.  
+This will create a user (mbuilds) in the container with matching UID/GID of the current user.  
 
 ## Run
 	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos
