@@ -6,14 +6,18 @@ Version: v0.1.1
 
 [logo]: /images/python_ide_full.png 
 
+## Clone the repo
+
+	``git clone https://github.com/minimumbuilds/minimum_python_ide.git``
+
 ## Personalize
 
-	make personalize
+	``make personalize``
 
 This will create a user (mbuilds) in the container with matching UID/GID of the current user.  
 
 ## Run
-	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos
+	``docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos``
 
 
 This will launch the IDE in the /repos dir in the current working directory. 
