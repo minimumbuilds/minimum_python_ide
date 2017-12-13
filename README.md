@@ -10,16 +10,16 @@ Version: v0.1.0
 
 	make personalize
 
-This will create a user in the container with the UID/GID of the current user.  
+This will create a user in the container with matching UID/GID of the current user.  
 
 ## Run
 	docker run -it --rm -p 1337:1337 --user -v $PWD:/repos minimumbuilds/vim_ide vim /repos
 
-Substitute the host machine directory you'd like to edit for <repos_dir>
 
 This will launch the IDE in the /repos dir in the container (your local directory)
 
 ## Usage
+
 - ``<F2>`` Buffer prev 
 - ``<F3>`` Buffer next 
 - ``<F6>`` toggles Livedown preview.   Open a markdown file, hit F7 and you'll get a Live preview of your Markown file. You will need to open a browser to ``localhost:1337``.  The preview will update immediately on write.
