@@ -33,7 +33,7 @@ On Ubuntu, you can also:
 Then simply click on the fonts you'd like to install in the ``patched-fonts`` directory.
 
 ## Run
-	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos minimumbuilds/vim_ide vim /repos
+	docker run -it --rm -p 1337:1337 --user mbuilds -v $PWD:/repos vim_ide vim /repos
 
 
 This will launch the IDE in the /repos dir in the current working directory. 
